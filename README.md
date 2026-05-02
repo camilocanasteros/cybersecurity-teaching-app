@@ -1,40 +1,103 @@
-# NetShield - App de Ciberseguridad
+# NetShield - Cybersecurity Learning App
 
-## Descripción
+## Overview
+NetShield is an educational cybersecurity mobile application that helps students understand real-world cyber threats such as phishing, malware, ransomware, and SQL injection through interactive and accessible content.
 
-Aplicación móvil para la enseñanza de ciberseguridad a estudiantes.
+The application includes a secure authentication system and is designed for users with little or no prior knowledge of cybersecurity.
 
-## Funcionalidades
+---
 
-* Registro de usuarios
-* Inicio de sesión con bcrypt
-* Información sobre ataques:
+## Features
+- User registration system
+- Secure login with password hashing (bcrypt)
+- Educational content about cybersecurity topics:
+  - Phishing
+  - Ransomware
+  - Malware
+  - SQL Injection
+- Security tips for safer internet usage
+- Future features:
+  - Interactive mini-games
+  - Cybersecurity videos
+  - User feedback surveys
 
-  * Phishing
-  * Ransomware
-  * Malware
-* Tips de seguridad
-* Información sobre inyección SQL
+---
 
-## Tecnologías
+## Technologies Used
+- Android (Java)
+- PHP (Backend API)
+- MySQL (Database)
+- XAMPP (Local development server)
+- Volley (HTTP requests)
 
-* Android (Java)
-* PHP
-* MySQL
-* XAMPP
+---
 
-## Instalación
+## Architecture
+Android Application → PHP API → MySQL Database
 
-### Backend
+---
 
-1. Colocar archivos en `/htdocs/netsshield/`
-2. Importar base de datos desde `database.sql`
+## Project Structure
 
-### Android
+netsshield/
+│
+├── android-app/     # Android application
+├── backend/         # PHP files (API)
+├── database/        # SQL database script
+├── README.md
+└── .gitignore
 
-Cambiar IP en el código:
-http://TU_IP/netsshield/
+---
 
-## Estado
+## Installation
 
-Proyecto en desarrollo (juegos y videos próximamente)
+### Backend (XAMPP)
+1. Install XAMPP  
+2. Move backend files to:  
+   htdocs/netsshield/  
+3. Start Apache and MySQL  
+4. Import the database:
+   - Open phpMyAdmin  
+   - Create a database  
+   - Import database/database.sql  
+
+---
+
+### Android App
+1. Open project in Android Studio  
+2. Update your local IP address in the code:  
+   http://YOUR_IP/netsshield/  
+3. Run the application on emulator or device  
+
+---
+
+## Security
+Passwords are securely stored using bcrypt hashing through the backend, ensuring that user credentials are protected and not stored in plain text.
+
+---
+
+## Purpose
+This project was developed to raise awareness about cybersecurity among students and provide an accessible way to learn about common cyber threats and how to prevent them.
+
+---
+
+## Future Improvements
+- Gamification features  
+- Interactive cybersecurity simulations  
+- Video learning modules  
+- Improved UI/UX design  
+
+---
+
+## Screenshots
+
+
+---
+
+## Author
+Camilo Canasteros
+
+---
+
+## Notes
+This project is intended for educational purposes and demonstrates the integration of a mobile application with a backend API and database.
