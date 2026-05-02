@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Randomware">
+
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forma6" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="RANSOMWARE"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="47dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="4dp"
+                            app:srcCompat="@drawable/que" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="90dp"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Qué es?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comoinfectarse"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.077"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/infected"
+                            android:layout_width="47dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            app:srcCompat="@drawable/infected" />
+
+                        <TextView
+                            android:id="@+id/infectedtxt"
+                            android:layout_width="159dp"
+                            android:layout_height="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Cómo te podrías infectar?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/malspamtitle"
+                    android:layout_width="140dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/greybg"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingTop="6dp"
+                    android:text="Malspam (Spam Malicioso)"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comoinfectarse" />
+
+                <TextView
+                    android:id="@+id/advertisetitle"
+                    android:layout_width="140dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="36dp"
+                    android:background="@drawable/greybg"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:padding="5dp"
+                    android:text="Publicidad Maliciosa"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comoinfectarse" />
+
+                <TextView
+                    android:id="@+id/textadvert"
+                    android:layout_width="168dp"
+                    android:layout_height="107dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/greybg"
+                    android:paddingStart="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="Mientras navegas por la web, incluso por sitios legítimos, puedes ser conducido a servidores delictivos sin necesidad de hacer clic en un anuncio."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/advertisetitle" />
+
+
+                <TextView
+                    android:id="@+id/circle2"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="@drawable/tipscircle2"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingStart="2dp"
+                    android:paddingTop="26dp"
+                    android:paddingBottom="4dp"
+                    android:text="Todo esto sucede sin tu conocimiento, por lo que a menudo se conoce como ataque por descarga oculta."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textadvert" />
+
+                <TextView
+                    android:id="@+id/circle1"
+                    android:layout_width="131dp"
+                    android:layout_height="131dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/tipscircle2"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingTop="30dp"
+                    android:text="Recibes mensajes no solicitados que contienen malware por correo electrónico"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comoinfectarse" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ingenieriasc">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="47dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            app:srcCompat="@drawable/lock" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="129dp"
+                            android:layout_height="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Cómo protegerse?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="288dp"
+                    android:layout_height="285dp"
+                    android:layout_marginTop="24dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                    app:srcCompat="@drawable/poster3" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="336dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/greybg"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingTop="6dp"
+                    android:text="es un tipo de malware que te impide acceder a tu sistema o a tus archivos personales y que exige el pago de un rescate para poder acceder de nuevo a ellos"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="8dp"
+                    android:text="."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nigeriano" />
+
+                <TextView
+                    android:id="@+id/textmalspam1"
+                    android:layout_width="209dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/greybg"
+                    android:paddingStart="6dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="El mensaje de correo electrónico puede incluir archivos adjuntos trampa, como PDF o documentos de Word. También puede contener enlaces a sitios web maliciosos"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/circle1" />
+
+                <TextView
+                    android:id="@+id/ingenieriasc"
+                    android:layout_width="128dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Utiliza Ingenieria Social"
+                    android:textColor="#9C3C45"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.201"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textmalspam1" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="108dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/circle2"
+                    app:srcCompat="@drawable/spam" />
+
+                <TextView
+                    android:id="@+id/tipos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="¿Conoces los tipos de ransomware?"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+                <Button
+                    android:id="@+id/spearph"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Scareware"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tipos" />
+
+                <Button
+                    android:id="@+id/clonacionph"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Bloqueadores de pantalla"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tipos" />
+
+                <Button
+                    android:id="@+id/nigeriano"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Ransomware de cifrado"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clonacionph" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

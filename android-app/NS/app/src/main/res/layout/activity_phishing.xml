@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Phishing">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forma4" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="PHISHING"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.095"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="47dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="4dp"
+                            app:srcCompat="@drawable/que" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="90dp"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Qué es?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:text="Como ocurre en la pesca,\n existe más de una forma de atrapar a una víctima"
+                    android:textAlignment="textEnd"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.875"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="330dp"
+                    android:layout_height="81dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/greybg"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingTop="5dp"
+                    android:text="El phishing es un ataque que intenta robar tu dinero o identidad, haciendo que divulgues información personal en sitios web que fingen ser sitios legítimos."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="48dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:srcCompat="@drawable/fish" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nolohagas">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="47dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            app:srcCompat="@drawable/lock" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="129dp"
+                            android:layout_height="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Cómo protegerse?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comoinfectarse"
+                    android:layout_width="324dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/whitebg"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/exp">
+
+                    <LinearLayout
+                        android:layout_width="302dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/infected"
+                            android:layout_width="47dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            app:srcCompat="@drawable/infected" />
+
+                        <TextView
+                            android:id="@+id/infectedtxt"
+                            android:layout_width="159dp"
+                            android:layout_height="29dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="¿Cómo te podrías infectar?"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="El phishing es la forma más sencilla\nde ciberataque y, al mismo tiempo,\nla más peligrosa y efectiva"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="275dp"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="24dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+                    app:srcCompat="@drawable/poster1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="500dp"
+                    android:text="."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.739"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/telefonoph" />
+
+                <ImageView
+                    android:id="@+id/sms"
+                    android:layout_width="57dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comoinfectarse"
+                    app:srcCompat="@drawable/sms" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="57dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="84dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/comoinfectarse"
+                    app:srcCompat="@drawable/identidad" />
+
+                <ImageView
+                    android:id="@+id/asustar"
+                    android:layout_width="57dp"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="84dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33"
+                    app:srcCompat="@drawable/asutar" />
+
+                <ImageView
+                    android:id="@+id/web"
+                    android:layout_width="57dp"
+                    android:layout_height="63dp"
+                    android:layout_marginEnd="84dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtmal"
+                    app:srcCompat="@drawable/sitioweb" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="170dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Recibes un mensaje de texto o correo de electronico."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sms" />
+
+
+                <TextView
+                    android:id="@+id/txtmal"
+                    android:layout_width="170dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="El correo o mensaje de texto imita (o “suplanta la identidad”) a una persona u organización de confianza."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+                <TextView
+                    android:id="@+id/txtweb"
+                    android:layout_width="170dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="El mensaje te exigirá que vayas a un sitio web y actúes de inmediato o tendrás que afrontar alguna consecuencia."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/web" />
+
+                <TextView
+                    android:id="@+id/txtasustar"
+                    android:layout_width="170dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Cuando abres el mensaje o correo, encuentras un mensaje hecho para asustarte."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/asustar" />
+
+                <TextView
+                    android:id="@+id/nolohagas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="¡No lo hagas!"
+                    android:textColor="#9C3C45"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtweb" />
+
+                <TextView
+                    android:id="@+id/tipos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="serif-monospace"
+                    android:text="¿Conoces los tipos de phishing?"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+                <Button
+                    android:id="@+id/spearph"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Spear Phishing"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tipos" />
+
+                <Button
+                    android:id="@+id/clonacionph"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Phishing de clonación"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tipos" />
+
+                <Button
+                    android:id="@+id/nigeriano"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="@color/black"
+                    android:text="491"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clonacionph" />
+
+                <Button
+                    android:id="@+id/telefonoph"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Phishing Telefónico"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spearph" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

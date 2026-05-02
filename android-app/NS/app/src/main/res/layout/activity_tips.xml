@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".Tips">
+
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tipsbg" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="185dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tips"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/whitebg"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingStart="5dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="5dp"
+                                android:text="Asegúrate de usar una contraseña fuerte y única para cada una de tus cuentas. Evita usar la misma contraseña en varias cuentas."
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toEndOf="@+id/textView5"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="49dp"
+                                android:layout_height="49dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/tipscircle"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="8dp"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="#B3404A"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textVie"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="2dp"
+                                android:background="@drawable/whitebg"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingStart="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="10dp"
+                                android:text="La autenticación de dos factores brinda una capa adicional de seguridad al requerir un código además de su contraseña para acceder a su cuenta. Habilita esta función en todas sus cuentas importantes."
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="49dp"
+                                android:layout_height="49dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/tipscircle"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="8dp"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="#B3404A"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textVi"
+                                android:layout_width="49dp"
+                                android:layout_height="49dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/tipscircle"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="8dp"
+                                android:text="3"
+                                android:textAlignment="center"
+                                android:textColor="#B3404A"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txttip3"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/whitebg"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingStart="5dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="5dp"
+                                android:text="Actualiza regularmente tu sistema operativo y software para identificar vulnerabilidades que podrían ser explotadas por hackers."
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toEndOf="@+id/textVi"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txttip4"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="2dp"
+                                android:background="@drawable/whitebg"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingStart="10dp"
+                                android:paddingTop="25dp"
+                                android:paddingEnd="10dp"
+                                android:text="Instale un software antivirus confiable para proteger su computadora de virus y malware."
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toStartOf="@+id/numtip4"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/numtip4"
+                                android:layout_width="49dp"
+                                android:layout_height="49dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/tipscircle"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="8dp"
+                                android:text="4"
+                                android:textAlignment="center"
+                                android:textColor="#B3404A"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="510dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/numtip5"
+                                android:layout_width="49dp"
+                                android:layout_height="49dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/tipscircle"
+                                android:fontFamily="sans-serif-black"
+                                android:padding="8dp"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="#B3404A"
+                                android:textSize="26sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txttip5"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/whitebg"
+                                android:fontFamily="sans-serif-medium"
+                                android:paddingStart="5dp"
+                                android:paddingTop="15dp"
+                                android:paddingEnd="5dp"
+                                android:text="Ten cuidado al abrir correos electrónicos, especialmente si provienen de remitentes desconocidos o contienen archivos adjuntos o enlaces sospechosos."
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toEndOf="@+id/numtip5"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
