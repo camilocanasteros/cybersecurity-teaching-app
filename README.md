@@ -91,6 +91,31 @@ This project was developed to raise awareness about cybersecurity among students
 
 ## Screenshots
 
+### App Logo
+<p align="center">
+  <img src="screenshots/mainscreen.png" width="250"/>
+</p>
+
+### Sign up
+<p align="center">
+  <img src="screenshots/signup.png" width="250"/>
+</p>
+
+### Login
+<p align="center">
+  <img src="screenshots/login.png" width="250"/>
+</p>
+
+### Welcome screen
+<p align="center">
+  <img src="screenshots/welcomescreen.png" width="250"/>
+</p>
+
+### Risk's type
+<p align="center">
+  <img src="screenshots/riskstype.png" width="250"/>
+</p>
+
 
 ---
 
